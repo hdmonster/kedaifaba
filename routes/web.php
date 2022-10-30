@@ -27,14 +27,16 @@ Route::get('/product', [ProductController::class, 'index'])->name('product.index
 Route::prefix('admin')->group(function(){
     Route::get('/login', [AdminAuthController::class, 'login'])->name('admin.login');
     Route::post('/login', [AdminAuthController::class, 'authenticate'])->name('admin.authenticate');
-    // Route::middleware('auth')->group(function(){
-        Route::post('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
+    Route::middleware('auth')->group(function(){
+        Route::get('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
         Route::get('/home', [AdminHomeController::class, 'index'])->name('admin.home');
         Route::get('/about', [AdminHomeController::class, 'about'])->name('admin.about');
         Route::post('/about', [AdminHomeController::class, 'storeAbout'])->name('admin.about.store');
         Route::get('/team', [AdminHomeController::class, 'team'])->name('admin.team');
         Route::post('/team', [AdminHomeController::class, 'storeTeam'])->name('admin.team.store');
-        // Route::resource('product', AdminProductController::class)->name('admin.product');
-    // });
+        Route::get('/testimonials', [AdminHomeController::class, 'testimonials'])->name('admin.testimonials');
+        Route::post('/testimonials', [AdminHomeController::class, 'storeTestimonials'])->name('admin.testimonials.store');
+        Route::resource('product', AdminProductController::class, ['as' => 'admin']);
+    });
 });
 

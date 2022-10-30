@@ -14,7 +14,10 @@ class AdminHomeController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'Dashboard';
+        return view('admin.home.index', [
+            'title' => $title
+        ]);
     }
 
     /**
