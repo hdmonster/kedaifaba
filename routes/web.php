@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\AdminProductController;
+use App\Http\Controllers\AdminTestimonialController;
+use App\Http\Controllers\AdminMemberController;
 use App\Http\Controllers\AdminAuthController;
 
 /*
@@ -30,12 +32,8 @@ Route::prefix('admin')->group(function(){
     Route::middleware('auth')->group(function(){
         Route::get('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
         Route::get('/home', [AdminHomeController::class, 'index'])->name('admin.home');
-        Route::get('/about', [AdminHomeController::class, 'about'])->name('admin.about');
-        Route::post('/about', [AdminHomeController::class, 'storeAbout'])->name('admin.about.store');
-        Route::get('/team', [AdminHomeController::class, 'team'])->name('admin.team');
-        Route::post('/team', [AdminHomeController::class, 'storeTeam'])->name('admin.team.store');
-        Route::get('/testimonials', [AdminHomeController::class, 'testimonials'])->name('admin.testimonials');
-        Route::post('/testimonials', [AdminHomeController::class, 'storeTestimonials'])->name('admin.testimonials.store');
+        Route::resource('testimonial', AdminTestimonialController::class, ['as' => 'admin']);
+        Route::resource('member', AdminMemberController::class, ['as' => 'admin']);
         Route::resource('product', AdminProductController::class, ['as' => 'admin']);
     });
 });

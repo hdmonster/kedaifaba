@@ -117,7 +117,7 @@
 
         <!-- Team -->
         <li class="nav-item">
-            <a class="nav-link {{ (request()->is('admin/team')) ? '' : 'collapsed' }}" href="{{ route('admin.team') }}">
+            <a class="nav-link {{ (request()->is('admin/member')) ? '' : 'collapsed' }}" href="{{ route('admin.member.index') }}">
             <i class="bi bi-person"></i>
             <span>Team Kami</span>
             </a>
@@ -135,7 +135,7 @@
 
         <!-- Testimonials -->
         <li class="nav-item">
-            <a class="nav-link {{ (request()->is('admin/testimonials')) ? '' : 'collapsed' }}" href="{{ route('admin.testimonials') }}">
+            <a class="nav-link {{ (request()->is('admin/testimonial')) ? '' : 'collapsed' }}" href="{{ route('admin.testimonial.index') }}">
             <i class="bi bi-envelope"></i>
             <span>Testimonials</span>
             </a>
@@ -146,12 +146,10 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
+    
+    @yield('header')
 
-    <div class="pagetitle">
-      <h1>{{ $title }}</h1>
-      @yield('breadcrumbs')
-      
-    </div><!-- End Page Title -->
+    
 
     <section class="section dashboard">
       <div class="row">

@@ -1,6 +1,10 @@
 @extends('admin.layouts.master')
 
-@section('breadcrumbs')
+
+@section('header')
+<div class="pagetitle">
+    <h1>{{ $title }}</h1>
+</div>
 <nav>
     <ol class="breadcrumb">
         <li class="breadcrumb-item">Home</li>
