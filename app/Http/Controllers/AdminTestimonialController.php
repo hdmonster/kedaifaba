@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Testimonial;
+use App\Http\Requests\TestimonialStore;
+use App\Http\Requests\TestimonialUpdate;
+use DB;
 
 class AdminTestimonialController extends Controller
 {
@@ -13,7 +17,13 @@ class AdminTestimonialController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'Testimonial';
+        $testimonials = Testimonial::paginate(10);
+
+        return view('admin.testimonial.index',[
+            'title' => $title,
+            'testimonials' => $testimonials,
+        ]);
     }
 
     /**
@@ -23,7 +33,11 @@ class AdminTestimonialController extends Controller
      */
     public function create()
     {
-        //
+        $title = 'Tambah Testimoni';
+
+        return view('admin.testimonial.create',[
+            'title' => $title
+        ]);
     }
 
     /**
@@ -32,9 +46,33 @@ class AdminTestimonialController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TestimonialStore $request)
     {
-        //
+        DB::beginTransaction();
+        try {
+            $testimonial = Testimonial::create([
+                'name' => $request->name,
+                'message' => $request->message,
+                'role' => $request->role,
+            ]);
+    
+            if($request->hasFile('avatar_url')){
+                $file = $request->file('avatar_url');
+                $fileName = 'testimonials/' . time() . '_' .$testimonial->name . '.' . $file->getClientOriginalExtension();
+                $file->storeAs('public/' , $fileName);
+                // dd($file);
+                $testimonial->update([
+                    'avatar_url' => $fileName
+                ]);
+            }
+            DB::commit();
+            return redirect()->back()->with('success', 'Data berhasil ditambahkan!');
+            
+        } catch (\Throwable $th) {
+            DB::rollback();
+            return redirect()->back()->with('error', 'Data gagal ditambahkan! Silahkan coba lagi atau hubungi developer untuk perbaikan!' . $th->getMessage());
+            //throw $th;
+        }
     }
 
     /**
@@ -54,9 +92,14 @@ class AdminTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Testimonial $testimonial)
     {
-        //
+        $title = 'Edit - ' . $testimonial->name;
+
+        return view('admin.testimonial.edit',[
+            'title' => $title,
+            'testimonial' => $testimonial,
+        ]);
     }
 
     /**
@@ -66,9 +109,33 @@ class AdminTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(TestimonialUpdate $request, Testimonial $testimonial)
     {
-        //
+        DB::beginTransaction();
+        try {
+            $testimonial->update([
+                'name' => $request->name,
+                'message' => $request->message,
+                'role' => $request->role,
+            ]);
+    
+            if($request->hasFile('avatar_url')){
+                $file = $request->file('avatar_url');
+                $fileName = 'testimonials/' . time() . '_' .$testimonial->name . '.' . $file->getClientOriginalExtension();
+                $file->storeAs('public/' , $fileName);
+                // dd($file);
+                $testimonial->update([
+                    'avatar_url' => $fileName
+                ]);
+            }
+            DB::commit();
+            return redirect()->back()->with('success', 'Data berhasil diperbarui!');
+            
+        } catch (\Throwable $th) {
+            DB::rollback();
+            return redirect()->back()->with('error', 'Data gagal diperbarui! Silahkan coba lagi atau hubungi developer untuk perbaikan!' . $th->getMessage());
+            //throw $th;
+        }
     }
 
     /**
@@ -77,8 +144,9 @@ class AdminTestimonialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Testimonial $testimonial)
     {
-        //
+        $testimonial->delete();
+        return redirect()->back()->with('success', 'Data berhasil dihapus!');
     }
 }
