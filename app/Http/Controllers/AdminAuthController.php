@@ -22,7 +22,7 @@ class AdminAuthController extends Controller
     }
 
     public function authenticate(Request $request){
-        request()->validate(
+        $this->validate($request,
         [
             'email' => 'required',
             'password' => 'required',
@@ -34,7 +34,7 @@ class AdminAuthController extends Controller
             return redirect()->route('admin.home');
         }
 
-        return redirect()->back()->withInput('errors', 'These credentials do not match our records.');
+        return redirect()->back()->withInput()->withErrors(['failed' => 'Email atau password anda salah.']);
     }
 
     public function logout(Request $request){

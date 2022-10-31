@@ -60,6 +60,12 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2">
+                  @error('failed')
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                          {{ $message }}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                  @enderror
                   </div>
 
                   <form class="row g-3" action="{{ route('admin.authenticate') }}" method="POST">
@@ -67,10 +73,9 @@
                     <div class="col-12">
                       <label for="email" class="form-label">Email</label>
                       <div class="input-group">
-                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                          id="email" required>
+                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" required>
                         @error('email')
-                        <div class="invalid-feedback">{{ $message }}</div>
+                          <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                       </div>
                     </div>
