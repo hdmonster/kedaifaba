@@ -27,9 +27,11 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 
 Route::prefix('admin')->group(function(){
-    Route::get('/login', [AdminAuthController::class, 'login'])->name('admin.login');
-    Route::post('/login', [AdminAuthController::class, 'authenticate'])->name('admin.authenticate');
-    Route::middleware('auth')->group(function(){
+  Route::get('/', function() { return redirect('/login'); })->name('admin.index');
+  Route::get('/login', [AdminAuthController::class, 'login'])->name('admin.login');
+  Route::post('/login', [AdminAuthController::class, 'authenticate'])->name('admin.authenticate');
+
+  Route::middleware('auth')->group(function(){
         Route::get('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
         Route::get('/home', [AdminHomeController::class, 'index'])->name('admin.home');
         Route::resource('testimonial', AdminTestimonialController::class, ['as' => 'admin']);

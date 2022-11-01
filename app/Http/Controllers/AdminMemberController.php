@@ -56,7 +56,7 @@ class AdminMemberController extends Controller
                 'name' => $request->name,
                 'role' => $request->role,
             ]);
-    
+
             if($request->hasFile('avatar_url')){
                 $file = $request->file('avatar_url');
                 $fileName = 'members/' . time() . '_' .$member->name . '.' . $file->getClientOriginalExtension();
@@ -68,7 +68,7 @@ class AdminMemberController extends Controller
             }
             DB::commit();
             return redirect()->back()->with('success', 'Data berhasil ditambahkan!');
-            
+
         } catch (\Throwable $th) {
             DB::rollback();
             return redirect()->back()->with('error', 'Data gagal ditambahkan! Silahkan coba lagi atau hubungi developer untuk perbaikan!');
@@ -118,7 +118,7 @@ class AdminMemberController extends Controller
                 'name' => $request->name,
                 'role' => $request->role,
             ]);
-    
+
             if($request->hasFile('avatar_url')){
                 $file = $request->file('avatar_url');
                 $fileName = 'members/' . time() . '_' .$member->name . '.' . $file->getClientOriginalExtension();
@@ -130,7 +130,7 @@ class AdminMemberController extends Controller
             }
             DB::commit();
             return redirect()->back()->with('success', 'Data berhasil diperbarui!');
-            
+
         } catch (\Throwable $th) {
             DB::rollback();
             return redirect()->back()->with('error', 'Data gagal diperbarui! Silahkan coba lagi atau hubungi developer untuk perbaikan!' . $th->getMessage());
