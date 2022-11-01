@@ -205,7 +205,7 @@
 <section class="services-section ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
   <div class="container">
     <div class="section-title">
-      <span class="sub-title">What We Do</span>
+      <span class="sub-title">What We Provide</span>
       <h2>We Provide Passion Fueled Interior Services</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.</p>
@@ -221,7 +221,7 @@
           <h3><a href="single-services.html">Interior</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et
             dolore magna aliqua.</p>
-          <a href="single-services.html" class="read-more-btn">Read More</a>
+          <a href="single-services.html" class="read-more-btn">Coming Soon</a>
         </div>
       </div>
 
@@ -354,7 +354,7 @@
   <div class="container">
     <div class="section-title">
       <span class="sub-title">Our Experts</span>
-      <h2>Meet Our Creative Team</h2>
+      <h2>Meet Our Team</h2>
     </div>
 
     <div class="row">
