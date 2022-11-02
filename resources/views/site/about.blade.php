@@ -91,6 +91,8 @@
 <!-- End Offer Area -->
 
 <!-- Start Team Area -->
+@if(count($members) > 0)
+
 <section class="team-section ptb-100 bg-faf5f5">
   <div class="container">
     <div class="section-title">
@@ -99,68 +101,36 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6">
-        <div class="single-team-member">
-          <div class="member-image">
-            <img src="assets/img/team1.jpg" alt="image">
-
-            <ul class="social">
-              <li><a href="#" target="_blank"><i class="flaticon-facebook-logo"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-twitter"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-instagram"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-linkedin"></i></a></li>
-            </ul>
-          </div>
-
-          <div class="member-content">
-            <h3>Suzan Lois</h3>
-            <span>CEO & Founder</span>
-          </div>
-        </div>
-      </div>
+      @foreach($members as $member)
 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="single-team-member">
           <div class="member-image">
-            <img src="assets/img/team2.jpg" alt="image">
+            <img src="{{ asset('storage/' . $member->avatar_url) }}"
+              style="width: 336px; height: 401px; object-fit: cover" alt="image">
 
-            <ul class="social">
+            {{-- <ul class="social">
               <li><a href="#" target="_blank"><i class="flaticon-facebook-logo"></i></a></li>
               <li><a href="#" target="_blank"><i class="flaticon-twitter"></i></a></li>
               <li><a href="#" target="_blank"><i class="flaticon-instagram"></i></a></li>
               <li><a href="#" target="_blank"><i class="flaticon-linkedin"></i></a></li>
-            </ul>
+            </ul> --}}
           </div>
 
           <div class="member-content">
-            <h3>Rose Alpha</h3>
-            <span>Manager</span>
+            <h3>{{ $member->name }}</h3>
+            <span>{{ $member->role }}</span>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-        <div class="single-team-member">
-          <div class="member-image">
-            <img src="assets/img/team3.jpg" alt="image">
-
-            <ul class="social">
-              <li><a href="#" target="_blank"><i class="flaticon-facebook-logo"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-twitter"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-instagram"></i></a></li>
-              <li><a href="#" target="_blank"><i class="flaticon-linkedin"></i></a></li>
-            </ul>
-          </div>
-
-          <div class="member-content">
-            <h3>Rosanna Pattie</h3>
-            <span>Architect</span>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
 </section>
+
+@endif
 <!-- End Team Area -->
+
 
 @endsection

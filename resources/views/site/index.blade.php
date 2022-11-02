@@ -346,70 +346,37 @@
 </section>
 <!-- End How We Work Area -->
 
+@if(count($testimonials) > 0)
+
 <!-- Start Testimonials Area -->
 <section class="testimonials-area ptb-100">
   <div class="container">
     <div class="section-title">
       <span class="sub-title">Testimonials</span>
-      <h2>What People Say About Our Design Studio</h2>
+      <h2>Apa yang mereka katakan tentang faba?</h2>
     </div>
 
     <div class="testimonials-slides owl-carousel owl-theme">
+      @foreach($testimonials as $testimonial)
+
       <div class="single-testimonials-item">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas.</p>
+        <p>{{ $testimonial->message }}</p>
 
         <div class="client-info">
-          <img src="/site/img/author1.jpg" alt="image">
+          <img src="{{ asset('storage/' . $testimonial->avatar_url) }}" alt="avatar">
 
-          <h3>Bunny Williams</h3>
-          <span>Interior Designer</span>
+          <h3>{{ $testimonial->name }}</h3>
+          <span>{{ $testimonial->role }}</span>
         </div>
       </div>
 
-      <div class="single-testimonials-item">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas.</p>
-
-        <div class="client-info">
-          <img src="/site/img/author2.jpg" alt="image">
-
-          <h3>Oliver Lucas</h3>
-          <span>Architecture Designer</span>
-        </div>
-      </div>
-
-      <div class="single-testimonials-item">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas.</p>
-
-        <div class="client-info">
-          <img src="/site/img/author3.jpg" alt="image">
-
-          <h3>Sarah Taylor</h3>
-          <span>Marketing Manager</span>
-        </div>
-      </div>
-
-      <div class="single-testimonials-item">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas.</p>
-
-        <div class="client-info">
-          <img src="assets/img/author4.jpg" alt="image">
-
-          <h3>Liam Elijah</h3>
-          <span>Lead Designer</span>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
 </section>
 <!-- End Testimonials Area -->
+
+@endif
 
 <!-- Start Partner Area -->
 <div class="partner-area ptb-100 pt-0">
@@ -432,27 +399,6 @@
       <a href="#">
         <img src="/site/img/partner3.png" alt="image">
         <img src="/site/img/partner3.png" alt="image">
-      </a>
-    </div>
-
-    <div class="partner-item">
-      <a href="#">
-        <img src="/site/img/partner4.png" alt="image">
-        <img src="/site/img/partner4.png" alt="image">
-      </a>
-    </div>
-
-    <div class="partner-item">
-      <a href="#">
-        <img src="/site/img/partner5.png" alt="image">
-        <img src="/site/img/partner5.png" alt="image">
-      </a>
-    </div>
-
-    <div class="partner-item">
-      <a href="#">
-        <img src="/site/img/partner6.png" alt="image">
-        <img src="/site/img/partner6.png" alt="image">
       </a>
     </div>
   </div>
