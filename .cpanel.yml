@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/keda5977/public_html/
-    - /bin/cp -R /home/keda5977/repositories/kedaifaba/public/ $DEPLOYPATH
+    - /bin/cp -R /home/keda5977/repositories/kedaifaba/routes/ $DEPLOYPATH
