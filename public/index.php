@@ -16,6 +16,10 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
+// if (file_exists($maintenance = __DIR__.'/../repositories/kedaifaba/storage/framework/maintenance.php')) {
+//     require $maintenance;
+// }
+
 if (file_exists($maintenance = __DIR__.'/../repositories/kedaifaba/storage/framework/maintenance.php')) {
     require $maintenance;
 }
@@ -31,6 +35,7 @@ if (file_exists($maintenance = __DIR__.'/../repositories/kedaifaba/storage/frame
 |
 */
 
+// require __DIR__.'/../repositories/kedaifaba/vendor/autoload.php';
 require __DIR__.'/../repositories/kedaifaba/vendor/autoload.php';
 
 /*
@@ -44,6 +49,7 @@ require __DIR__.'/../repositories/kedaifaba/vendor/autoload.php';
 |
 */
 
+// $app = require_once __DIR__.'/../repositories/kedaifaba/bootstrap/app.php';
 $app = require_once __DIR__.'/../repositories/kedaifaba/bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
