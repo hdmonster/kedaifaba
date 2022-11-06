@@ -31,7 +31,7 @@
 
   <title>{{ Request::is('/') ? 'Kedai Faba' : $title . ' - Kedai Faba' }}</title>
 
-  <link rel="icon" type="image/png" href="/site/img/favicon.png">
+  <link rel="icon" type="image/png" href="/site/img/kedaifaba/logo-no-text.png">
 </head>
 
 <body>
@@ -91,6 +91,7 @@
   <script src="/site/js/contact-form-script.js"></script>
   <!-- Main JS -->
   <script src="/site/js/main.js"></script>
+
 </body>
 
 </html>

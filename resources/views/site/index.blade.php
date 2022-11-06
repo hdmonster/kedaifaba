@@ -66,13 +66,12 @@
       <div class="col-lg-7 col-md-12">
         <div class="about-text">
           <span class="sub-title">Who We Are</span>
-          <h2>Interior Design Companies in the <span>United States</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.</p>
-          <div class="quote">
+          <h2>Material Konstruksi Berkualitas dari <span>Fly Ash Bottom Ash</span></h2>
+          <p>Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional.</p>
+          <!-- <div class="quote">
             “Interior Design is making the best possible use of the Available Space
-          </div>
-          <a href="about-2.html" class="default-btn">More About Us <span></span></a>
+          </div> -->
+          <a href="{{ route('about') }}" class="default-btn">Selanjutnya Tentang Kami <span></span></a>
 
           <div class="back-animation-text">Design Studio</div>
         </div>
@@ -80,8 +79,8 @@
 
       <div class="col-lg-5 col-md-12">
         <div class="about-img">
-          <img src="assets/img/about-img2.jpg" alt="image">
-          <img src="assets/img/about-img3.jpg" alt="image">
+          <img src="/site/img/kedaifaba/members/full-team.png" width="1000px" alt="image">
+          <!-- <img src="/img/about-img3.jpg" alt="image"> -->
         </div>
       </div>
     </div>
@@ -96,36 +95,36 @@
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-curtain"></i>
+            <i class="fas fa-clipboard-list"></i>
           </div>
-          <h3><a href="#">Professional Design</a></h3>
+          <h3><a href="#">Transparan</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-desktop"></i>
+            <i class="fas fa-money-bill-wave"></i>
           </div>
-          <h3><a href="#">Creative Desktop</a></h3>
+          <h3><a href="#">Jaminan Uang Kembali</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-rulers"></i>
+            <i class="fas fa-shipping-fast"></i>
           </div>
-          <h3><a href="#">Skilled Architecture</a></h3>
+          <h3><a href="#">Mudah dalam Bertransaksi</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
     </div>
@@ -203,51 +202,50 @@
   <div class="container">
     <div class="section-title">
       <span class="sub-title">What We Provide</span>
-      <h2>We Provide Passion Fueled Interior Services</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.</p>
+      <h2>Kami Menyediakan Kontruksi Berkualitas</h2>
+      <p>Barang yang kami berikan sudah pasti yang terbaik dan berasal dari Fly Ash dan Bottom Ash.</p>
     </div>
 
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
-            <i class="flaticon-double-bed"></i>
+            <!-- <i class="flaticon-double-bed"></i> -->
+            <img src="/site/img/kedaifaba/beton.png" width="100px">
           </div>
 
-          <h3><a href="single-services.html">Interior</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et
-            dolore magna aliqua.</p>
-          <a href="single-services.html" class="read-more-btn">Coming Soon</a>
+          <h3><a href="#">Raw Material Beton FABA</a></h3>
+          <p>Selain baja ringan bahan material beton ringan juga mulai banyak diminati, seperti namanya baja ini memiliki bobot yang sangat ringan.</p>
+          <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
-            <i class="flaticon-hotel"></i>
+            <!-- <i class="flaticon-hotel"></i> -->
+            <img src="/site/img/kedaifaba/batako.png" width="90px">
           </div>
 
-          <h3><a href="single-services.html">Architecture</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et
-            dolore magna aliqua.</p>
-          <a href="single-services.html" class="read-more-btn">Read More</a>
+          <h3><a href="#">Batako FABA</a></h3>
+          <p>Batako adalah blok yang dibuat dari bahan kiln, biasanya tanah liat atau serpih, tetapi juga mungkin dari lumpur berkualitas rendah, dll.</p>
+          <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
-            <i class="flaticon-living-room"></i>
+            <!-- <i class="flaticon-living-room"></i> -->
+            <img src="/site/img/kedaifaba/paving.png" width="140px">
           </div>
 
-          <h3><a href="single-services.html">Exterior</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et
-            dolore magna aliqua.</p>
-          <a href="single-services.html" class="read-more-btn">Read More</a>
+          <h3><a href="#">Paving Block FABA</a></h3>
+          <p>Dalam pembuatannya paving block menggunakan susunan bahan sama seperti beton yaitu semen, agregat halus (FABA), dan air.</p>
+          <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
-
+<!-- 
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
@@ -285,7 +283,7 @@
             dolore magna aliqua.</p>
           <a href="single-services.html" class="read-more-btn">Read More</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -381,26 +379,63 @@
 <!-- Start Partner Area -->
 <div class="partner-area ptb-100 pt-0">
   <div class="partner-slides owl-carousel owl-theme">
+
     <div class="partner-item">
       <a href="#">
-        <img src="/site/img/partner1.png" alt="image">
-        <img src="/site/img/partner1.png" alt="image">
+        <img src="/site/img/kedaifaba/supporter/1.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/1.png" alt="image" style="width: 150px !important;">
       </a>
     </div>
 
     <div class="partner-item">
       <a href="#">
-        <img src="/site/img/partner2.png" alt="image">
-        <img src="/site/img/partner2.png" alt="image">
+        <img src="/site/img/kedaifaba/supporter/2.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/2.png" alt="image" style="width: 150px !important;">
       </a>
     </div>
 
     <div class="partner-item">
       <a href="#">
-        <img src="/site/img/partner3.png" alt="image">
-        <img src="/site/img/partner3.png" alt="image">
+        <img src="/site/img/kedaifaba/supporter/3.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/3.png" alt="image" style="width: 150px !important;">
       </a>
     </div>
+
+    <div class="partner-item">
+      <a href="#">
+        <img src="/site/img/kedaifaba/supporter/4.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/4.png" alt="image" style="width: 150px !important;">
+      </a>
+    </div>
+
+    <div class="partner-item">
+      <a href="#">
+        <img src="/site/img/kedaifaba/supporter/5.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/5.png" alt="image" style="width: 150px !important;">
+      </a>
+    </div>
+
+    <div class="partner-item">
+      <a href="#">
+        <img src="/site/img/kedaifaba/supporter/6.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/6.png" alt="image" style="width: 150px !important;">
+      </a>
+    </div>
+
+    <div class="partner-item">
+      <a href="#">
+        <img src="/site/img/kedaifaba/supporter/7.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/7.png" alt="image" style="width: 150px !important;">
+      </a>
+    </div>
+
+    <div class="partner-item">
+      <a href="#">
+        <img src="/site/img/kedaifaba/supporter/8.png" alt="image" style="width: 150px !important;">
+        <img src="/site/img/kedaifaba/supporter/8.png" alt="image" style="width: 150px !important;">
+      </a>
+    </div>
+
   </div>
 </div>
 <!-- End Partner Area -->

@@ -4,7 +4,7 @@
       <div class="zovio-responsive-menu">
         <div class="logo">
           <a href="/">
-            <img src="/site/img/logo.png" alt="logo">
+            <img src="/site/img/kedaifaba/logo-no-text.png" width="30px" alt="logo">
           </a>
         </div>
       </div>
@@ -14,7 +14,7 @@
   <div class="zovio-nav">
     <nav class="navbar navbar-expand-md navbar-light">
       <a class="navbar-brand" href="/">
-        <img src="/site/img/logo.png" alt="logo">
+        <img src="/site/img/kedaifaba/logo-no-text.png" width="50px" alt="logo">
       </a>
 
       <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
