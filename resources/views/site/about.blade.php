@@ -36,7 +36,7 @@
           </div> --}}
           <a href="#" class="default-btn">Contact Us <span></span></a>
 
-          <div class="back-animation-text">Design Studio</div>
+          <div class="back-animation-text">Pentagon</div>
         </div>
       </div>
 

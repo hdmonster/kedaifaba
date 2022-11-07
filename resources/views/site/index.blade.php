@@ -74,7 +74,7 @@
           </div> -->
           <a href="{{ route('about') }}" class="default-btn">Selanjutnya Tentang Kami <span></span></a>
 
-          <div class="back-animation-text">Design Studio</div>
+          <div class="back-animation-text">Pentagon</div>
         </div>
       </div>
 
