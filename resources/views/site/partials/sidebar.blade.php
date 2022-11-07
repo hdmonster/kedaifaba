@@ -3,9 +3,10 @@
     <div class="sidebar-about-area">
       <div class="title">
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra. Quis
-          suspendisse ultrices gravida.</p>
+        <p>
+          Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang
+          sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional.
+        </p>
       </div>
     </div>
 
@@ -14,9 +15,9 @@
         <div class="contact-info">
           <div class="contact-info-content">
             <h2>
-              <a href="tel:+0881306298615">+088 130 629 8615</a>
+              <a href="tel:+0881306298615">+ (321) 984 754</a>
               <span>OR</span>
-              <a href="mailto:zovio@gmail.com">zovio@gmail.com</a>
+              <a href="mailto:zovio@gmail.com">ruangpentagon@gmail.com</a>
             </h2>
 
             <ul class="social">

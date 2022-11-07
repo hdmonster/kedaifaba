@@ -23,13 +23,18 @@
       <div class="col-lg-7 col-md-12">
         <div class="about-text">
           <span class="sub-title">Who We Are</span>
-          <h2>Interior Design Companies in the <span>United States</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-          <div class="quote">
+          <h2>Material Konstruksi Berkualitas dari <span>Fly Ash Bottom Ash</span></h2>
+          <p>
+            Fokus produk kami adalah layanan supply produk-produk material bangunan yang bersumber dari Fly Ash dan
+            Bottom Ash, terutama pada material beton, supply batako, paving block, dan kebutuhan material bangunan
+            lainnya. Semua produk bahan bangunan yang kami sediakan dalam web pemasaran ini tidak selalu dalam kondisi
+            ready stock, Namun kami tetap berupaya semaksimal mungkin untuk mengahadirkannya dengan penawaran harga
+            terbaik.
+          </p>
+          {{-- <div class="quote">
             “Interior Design is making the best possible use of the Available Space
-          </div>
-          <a href="contact.html" class="default-btn">Contact Us <span></span></a>
+          </div> --}}
+          <a href="#" class="default-btn">Contact Us <span></span></a>
 
           <div class="back-animation-text">Design Studio</div>
         </div>
@@ -37,8 +42,10 @@
 
       <div class="col-lg-5 col-md-12">
         <div class="about-img">
-          <img src="assets/img/about-img2.jpg" alt="image">
-          <img src="assets/img/about-img3.jpg" alt="image">
+          <img src="https://techbullion.com/wp-content/uploads/2021/01/Construction-Materials.png" alt="image">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhHWCEeQjtzQjbZuwCcx324z8i9gEpHITzF-Ry7jC-wdWVbTijjzb4Y_3GOmymcSFcaVOmBPmutxihvhNcRkd4vAfmjNhj9NH8kQDtATP03gKvIX1ii9oSgXxED-I0xygMMe0o4Ljrr_9PQN9dibKN7oKTeAxzYq1ObDKXyHzAraBWwvFFiFaZxNTxw8A=w1200-h630-p-k-no-nu"
+            alt="image">
         </div>
       </div>
     </div>
@@ -53,9 +60,9 @@
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-curtain"></i>
+            <i class="fas fa-clipboard-list"></i>
           </div>
-          <h3><a href="#">Professional Design</a></h3>
+          <h3><a href="#">Harga Transparan</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Quis ipsum suspendisse.</p>
           <a href="#" class="read-more-btn">Read More</a>
@@ -65,9 +72,9 @@
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-desktop"></i>
+            <i class="fas fa-money-bill-wave"></i>
           </div>
-          <h3><a href="#">Creative desktop</a></h3>
+          <h3><a href="#">Jaminan Uang Kembali </a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Quis ipsum suspendisse.</p>
           <a href="#" class="read-more-btn">Read More</a>
@@ -77,9 +84,9 @@
       <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
         <div class="offer-box">
           <div class="icon">
-            <i class="flaticon-rulers"></i>
+            <i class="fas fa-shipping-fast"></i>
           </div>
-          <h3><a href="#">Skilled Architecture</a></h3>
+          <h3><a href="#">Mudah dalam Bertransaksi</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Quis ipsum suspendisse.</p>
           <a href="#" class="read-more-btn">Read More</a>

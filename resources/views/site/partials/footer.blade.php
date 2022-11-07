@@ -5,7 +5,10 @@
         <div class="single-footer-widget">
           <div class="logo">
             <a href="#"><img src="/site/img/kedaifaba/logo-with-text.png" width="250px" alt="image"></a>
-            <p>Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional. <br><br> Produk yang ditawarkan adalah material konstruksi berbahan dasar Fly Ash dan Bottom Ash Hasil Samping Batubara yang kuat dan tahan lama.</p>
+            <p>Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang
+              sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional. <br><br>
+              Produk yang ditawarkan adalah material konstruksi berbahan dasar Fly Ash dan Bottom Ash Hasil Samping
+              Batubara yang kuat dan tahan lama.</p>
           </div>
         </div>
       </div>
@@ -44,7 +47,7 @@
 
   <div class="copyright-area">
     <div class="container">
-      <p><i class="flaticon-copyright"></i> 2021, <a href="https://envytheme.com/" target="_blank">EnvyTheme</a>. All
+      <p><i class="flaticon-copyright"></i> 2022, <a href="#" target="_blank">EnvyTheme</a>. All
         Rights Reserved by Kedai Faba</p>
     </div>
   </div>
