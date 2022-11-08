@@ -26,8 +26,9 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 
+Route::redirect('/admin', '/admin/login');
+
 Route::prefix('admin')->group(function(){
-  Route::get('/', function() { return redirect('/login'); })->name('admin.index');
   Route::get('/login', [AdminAuthController::class, 'login'])->name('admin.login');
   Route::post('/login', [AdminAuthController::class, 'authenticate'])->name('admin.authenticate');
 

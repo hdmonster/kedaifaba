@@ -31,7 +31,7 @@
               ut labore et dolore magna aliqua.</p>
 
             <div class="btn-box">
-              <a href="about-1.html" class="optional-btn">Pelajari lebih lanjut Us <span></span></a>
+              <a href="/#" class="optional-btn">Pelajari lebih lanjut <span></span></a>
             </div>
           </div>
         </div>
@@ -67,13 +67,14 @@
         <div class="about-text">
           <span class="sub-title">Who We Are</span>
           <h2>Material Konstruksi Berkualitas dari <span>Fly Ash Bottom Ash</span></h2>
-          <p>Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional.</p>
+          <p>Kedai FABA lahir dari Tanah Borneo Indonesia, diusung oleh para praktisi konstruksi dan marketing yang
+            sudah berpengalaman 5 tahun lebih, berafiliasi dengan produsen produk konstruksi skala nasional.</p>
           <!-- <div class="quote">
             “Interior Design is making the best possible use of the Available Space
           </div> -->
           <a href="{{ route('about') }}" class="default-btn">Selanjutnya Tentang Kami <span></span></a>
 
-          <div class="back-animation-text">Design Studio</div>
+          <div class="back-animation-text">Pentagon</div>
         </div>
       </div>
 
@@ -215,7 +216,8 @@
           </div>
 
           <h3><a href="#">Raw Material Beton FABA</a></h3>
-          <p>Selain baja ringan bahan material beton ringan juga mulai banyak diminati, seperti namanya baja ini memiliki bobot yang sangat ringan.</p>
+          <p>Selain baja ringan bahan material beton ringan juga mulai banyak diminati, seperti namanya baja ini
+            memiliki bobot yang sangat ringan.</p>
           <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
@@ -228,7 +230,8 @@
           </div>
 
           <h3><a href="#">Batako FABA</a></h3>
-          <p>Batako adalah blok yang dibuat dari bahan kiln, biasanya tanah liat atau serpih, tetapi juga mungkin dari lumpur berkualitas rendah, dll.</p>
+          <p>Batako adalah blok yang dibuat dari bahan kiln, biasanya tanah liat atau serpih, tetapi juga mungkin dari
+            lumpur berkualitas rendah, dll.</p>
           <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
@@ -241,11 +244,12 @@
           </div>
 
           <h3><a href="#">Paving Block FABA</a></h3>
-          <p>Dalam pembuatannya paving block menggunakan susunan bahan sama seperti beton yaitu semen, agregat halus (FABA), dan air.</p>
+          <p>Dalam pembuatannya paving block menggunakan susunan bahan sama seperti beton yaitu semen, agregat halus
+            (FABA), dan air.</p>
           <a href="#" class="read-more-btn">Available</a>
         </div>
       </div>
-<!-- 
+      <!--
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
