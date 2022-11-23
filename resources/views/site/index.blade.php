@@ -173,12 +173,12 @@
         <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="services-box">
             <div class="icon">
-              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" width="100px">
+              <img src="/storage/{{ $product->img_url }}" width="100px">
             </div>
 
             <h3><a href="#">{{ $product->name }}</a></h3>
             <p>{{ $product->description }}</p>
-            <a href="#" class="read-more-btn" disabled>Available</a>
+            <a href="{{ $product->product_url }}" class="read-more-btn" >Cek Produk</a>
           </div>
         </div>
       @endforeach
@@ -329,7 +329,7 @@
   <div class="container">
     <div class="section-title">
       <span class="sub-title">Testimonials</span>
-      <h2>Apa yang mereka katakan tentang faba?</h2>
+      <h2>Apa yang mereka katakan tentang FABA?</h2>
     </div>
 
     <div class="testimonials-slides owl-carousel owl-theme">

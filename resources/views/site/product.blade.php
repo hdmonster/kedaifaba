@@ -38,8 +38,8 @@
         <div class="single-product-box">
           <div class="product-image">
             <a href="{{ $product->product_url }}" target="_blank">
-              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" alt="image">
-              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" alt="image">
+              <img src="/storage/{{ $product->img_url }}" alt="image">
+              <img src="/storage/{{ $product->img_url }}" alt="image">
             </a>
 
             <a href="{{ $product->product_url }}" target="_blank" class="add-to-cart-btn">Lihat di Tokopedia <i
@@ -51,13 +51,6 @@
             <div class="price">
               <span class="new">Rp {{ $product->price }}</span>
               {{-- <span class="old">$460.50</span> --}}
-            </div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
             </div>
           </div>
         </div>

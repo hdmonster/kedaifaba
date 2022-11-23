@@ -14,18 +14,19 @@
       <div class="sidebar-contact-area">
         <div class="contact-info">
           <div class="contact-info-content">
-            <h2>
+            <!-- <h2>
               <a href="tel:+0881306298615">+ (321) 984 754</a>
               <span>OR</span>
-              <a href="mailto:zovio@gmail.com">ruangpentagon@gmail.com</a>
-            </h2>
+              <a href="mailto:ruangpentagon@gmail.com">ruangpentagon@gmail.com</a>
+            </h2> -->
 
             <ul class="social">
-              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <!-- <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
               <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> -->
+              <li><a href="#" target="_blank"><i class="pr-0 fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><i class="flaticon-bag"></i></a></li>
             </ul>
           </div>
         </div>

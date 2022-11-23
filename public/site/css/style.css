@@ -2149,9 +2149,9 @@ Navbar Area CSS
   opacity: 1;
 }
 
-.sidebar-modal .sidebar-about-area {
+/* .sidebar-modal .sidebar-about-area {
   margin-bottom: 40px;
-}
+} */
 
 .sidebar-modal .sidebar-about-area .title h2 {
   margin-bottom: 0;
@@ -7893,9 +7893,9 @@ Contact Area CSS
   font-weight: 600;
 }
 
-.contact-info {
+/* .contact-info {
   padding-left: 25px;
-}
+} */
 
 .contact-info ul {
   padding-left: 0;
