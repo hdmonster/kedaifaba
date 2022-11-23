@@ -47,12 +47,12 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Display:400,400i,700,700i,900,900i&display=swap");
 body {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
@@ -115,7 +115,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .bg-faf5f5 {
@@ -225,7 +225,7 @@ h6 {
 
 .section-title .sub-title {
   display: block;
-  color: #c9a52e;
+  color: #c9a52e !important;
   margin-bottom: 4px;
   font-weight: 500;
   font-size: 18px;
@@ -244,7 +244,12 @@ h6 {
 }
 
 .section-title h2 span {
-  color: #c9a52e;
+  color: #c9a52e !important;
+  display: inline-block;
+}
+
+h1 span {
+  color: #ffe386;
   display: inline-block;
 }
 
@@ -2497,17 +2502,6 @@ Main Banner CSS
   background-repeat: no-repeat;
 }
 
-.item-bg1 {
-  background-image: url(https://images.unsplash.com/photo-1514539079130-25950c84af65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
-}
-
-.item-bg2 {
-  background-image: url(https://images.unsplash.com/photo-1604187351574-c75ca79f5807?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-}
-
-.item-bg3 {
-  background-image: url(https://images.unsplash.com/photo-1594760467013-64ac2b80b7d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
-}
 
 .main-banner-content {
   text-align: center;
@@ -3119,7 +3113,7 @@ Services Area CSS
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
-  background-image: url(../img/services-bg.jpg);
+  background-image: url(../img/tambang.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7946,6 +7940,54 @@ Contact Area CSS
   -webkit-box-shadow: 0 1px 2px 1px #c9a52e;
   box-shadow: 0 1px 2px 1px #c9a52e;
   z-index: -1;
+}
+
+.about-text .row .col {
+  position: relative;
+  padding-left: 62px;
+  color: #666666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.about-text .row .col .icon {
+  border: 1px dashed #c9a52e;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.about-text .row .col .icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #c9a52e;
+  border-radius: 50%;
+  margin: 6px;
+  -webkit-box-shadow: 0 1px 2px 1px #c9a52e;
+  box-shadow: 0 1px 2px 1px #c9a52e;
+  z-index: -1;
+}
+
+.about-text .row .col span {
+  display: block;
+  margin-bottom: 2px;
+  color: #252920;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .contact-info ul li span {

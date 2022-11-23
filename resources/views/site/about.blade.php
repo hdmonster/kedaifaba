@@ -24,6 +24,22 @@
         <div class="about-text">
           <span class="sub-title">Who We Are</span>
           <h2>Material Konstruksi Berkualitas dari <span>Fly Ash Bottom Ash</span></h2>
+          <div class="row mt-4 mb-3">
+            <div class="col">
+              <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <span>Alamat</span>
+              Institut Teknologi Kalimantan
+            </div>
+            <div class="col">
+              <div class="icon">
+                  <i class="fas fa-envelope"></i>
+              </div>
+              <span>Email</span>
+              ruangpentagon@gmail.com
+            </div>
+          </div>
           <p>
             Fokus produk kami adalah layanan supply produk-produk material bangunan yang bersumber dari Fly Ash dan
             Bottom Ash, terutama pada material beton, supply batako, paving block, dan kebutuhan material bangunan
@@ -31,10 +47,7 @@
             ready stock, Namun kami tetap berupaya semaksimal mungkin untuk mengahadirkannya dengan penawaran harga
             terbaik.
           </p>
-          {{-- <div class="quote">
-            “Interior Design is making the best possible use of the Available Space
-          </div> --}}
-          <a href="#" class="default-btn">Contact Us <span></span></a>
+          <!-- <a href="#" class="default-btn">Contact Us <span></span></a> -->
 
           <div class="back-animation-text">Pentagon</div>
         </div>
@@ -49,12 +62,16 @@
         </div>
       </div>
     </div>
+
+    <div class="row mt-5 mb-5">
+      
+    </div>
   </div>
 </div>
 <!-- End About Area -->
 
 <!-- Start Offer Area -->
-<section class="offer-area ptb-100">
+<!-- <section class="offer-area ptb-100">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-6">
@@ -62,10 +79,8 @@
           <div class="icon">
             <i class="fas fa-clipboard-list"></i>
           </div>
-          <h3><a href="#">Harga Transparan</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <h3><a href="#" disabled>Transparan</a></h3>
+          <p>Dilakukan secara terbuka sehingga semua proses dapat dilihat.</p>
         </div>
       </div>
 
@@ -74,10 +89,8 @@
           <div class="icon">
             <i class="fas fa-money-bill-wave"></i>
           </div>
-          <h3><a href="#">Jaminan Uang Kembali </a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <h3><a href="#" disabled>Jaminan Uang Kembali</a></h3>
+          <p>Jika kondisi barang cacat atau buruk, bisa melakukan refund.</p>
         </div>
       </div>
 
@@ -86,15 +99,13 @@
           <div class="icon">
             <i class="fas fa-shipping-fast"></i>
           </div>
-          <h3><a href="#">Mudah dalam Bertransaksi</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse.</p>
-          <a href="#" class="read-more-btn">Read More</a>
+          <h3><a href="#" disabled>Transaksi Mudah</a></h3>
+          <p>Cukup memesan dari rumah saja, tidak perlu datang ke tempat.</p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End Offer Area -->
 
 <!-- Start Team Area -->
@@ -104,7 +115,7 @@
   <div class="container">
     <div class="section-title">
       <span class="sub-title">Our Experts</span>
-      <h2>Meet Our Creative Team</h2>
+      <h2>Meet Our Team</h2>
     </div>
 
     <div class="row">

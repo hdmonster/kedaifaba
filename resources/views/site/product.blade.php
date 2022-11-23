@@ -38,8 +38,8 @@
         <div class="single-product-box">
           <div class="product-image">
             <a href="{{ $product->product_url }}" target="_blank">
-              <img src="{{ Storage::url($product->img_url) }}" alt="image">
-              <img src="{{ Storage::url($product->img_url) }}" alt="image">
+              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" alt="image">
+              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" alt="image">
             </a>
 
             <a href="{{ $product->product_url }}" target="_blank" class="add-to-cart-btn">Lihat di Tokopedia <i

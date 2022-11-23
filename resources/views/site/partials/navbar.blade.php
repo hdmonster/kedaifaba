@@ -19,9 +19,9 @@
 
       <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="/product" class="nav-link">Produk</a></li>
-          <li class="nav-item"><a href="/about" class="nav-link">Tentang kami</a></li>
+          <li class="nav-item"><a href="/" class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li>
+          <li class="nav-item"><a href="/product" class="nav-link {{ Route::currentRouteName() == 'product.index' ? 'active' : '' }}">Produk</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}">Tentang kami</a></li>
         </ul>
 
         <div class="others-options">

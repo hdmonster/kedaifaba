@@ -26,6 +26,7 @@ class ProductStore extends FormRequest
         return [
             'name' => 'required',
             'price' => 'required',
+            'description' => 'required',
             'product_url' => 'required',
             'img_url' => 'required|file|mimes:jpg,jpeg,png',
             // 'avatar_url.*' => 'required|file|mimes:jpg,jpeg,png',
@@ -36,6 +37,7 @@ class ProductStore extends FormRequest
     {
         return [
             'name.required' => 'Nama wajib diisi.',
+            'description.required' => 'Deskripsi wajib diisi.',
             'price.required' => 'Harga wajib diisi.',
             'img_url.required' => 'Foto wajib diisi.',
             'img_url.mimes.*' => 'Format foto wajib berupa .jpg, .jpeg, .png (pilih salah satu).',

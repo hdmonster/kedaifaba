@@ -54,6 +54,7 @@ class AdminProductController extends Controller
             $product = Product::create([
                 'name' => $request->name,
                 'price' => $request->price,
+                'description' => $request->description,
                 'product_url' => $request->product_url,
             ]);
     
@@ -117,8 +118,10 @@ class AdminProductController extends Controller
             $product->update([
                 'name' => $request->name,
                 'price' => $request->price,
+                'description' => $request->description,
                 'product_url' => $request->product_url,
             ]);
+            
     
             if($request->hasFile('img_url')){
                 $file = $request->file('img_url');

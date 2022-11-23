@@ -39,6 +39,17 @@
                     </div>
                 </div>
 
+                <!-- Description -->
+                <div class="row mb-3">
+                    <label for="description" class="col-sm-2 col-form-label">Deskripsi</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control @error('description') is-invalid @enderror" name="description" id="description" value="{{ old('description') }}">
+                        @error('description')
+                            <span class="invalid-feedback">{{ $message }}</span>
+                        @enderror
+                    </div>
+                </div>
+
                 <!-- Price -->
                 <div class="row mb-3">
                     <label for="price" class="col-sm-2 col-form-label">Harga</label>

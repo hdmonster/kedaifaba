@@ -38,7 +38,7 @@
           <ul class="footer-contact-info">
             <li><i class="fas fa-map-marker-alt"></i> Institut Teknologi Kalimantan</li>
             <li><i class="far fa-envelope"></i> <a href="#">ruangpentagon@gmail.com</a></li>
-            <li><i class="fas fa-phone"></i> <a href="#">+ (321) 984 754</a></li>
+            <!-- <li><i class="fas fa-phone"></i> <a href="#">+ (321) 984 754</a></li> -->
           </ul>
         </div>
       </div>

@@ -3,17 +3,16 @@
 @section('content')
 <!-- Start Main Banner Area -->
 <div class="home-slides-two owl-carousel owl-theme">
-  <div class="main-banner item-bg2 jarallax" data-jarallax='{"speed": 0.3}'>
+  <div class="main-banner item-bg2 jarallax" style="background-image: url('/site/img/kedaifaba/pltu.png')" data-jarallax='{"speed": 0.3}'>
     <div class="d-table">
       <div class="d-table-cell">
         <div class="container">
           <div class="main-banner-content">
-            <h1>100% Recycled</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.</p>
+            <h1 class="mb-0"><span>100% </span> Recycled</h1>
+            <p class="mt-1">Fly Ash & Bottom Ash batu bara sebagai material konstruksi yang berkelanjutan.</p>
 
-            <div class="btn-box">
-              <a href="about-1.html" class="optional-btn">Pelajari lebih lanjut <span></span></a>
+            <div class="btn-box mt-1">
+              <a href="#" class="optional-btn">Pelajari lebih lanjut <span></span></a>
             </div>
           </div>
         </div>
@@ -21,41 +20,6 @@
     </div>
   </div>
 
-  <div class="main-banner item-bg3 jarallax" data-jarallax='{"speed": 0.3}'>
-    <div class="d-table">
-      <div class="d-table-cell">
-        <div class="container">
-          <div class="main-banner-content">
-            <h1>200% lebih tangguh</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.</p>
-
-            <div class="btn-box">
-              <a href="/#" class="optional-btn">Pelajari lebih lanjut <span></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-banner item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
-    <div class="d-table">
-      <div class="d-table-cell">
-        <div class="container">
-          <div class="main-banner-content">
-            <h1>Zero Waste</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.</p>
-
-            <div class="btn-box">
-              <a href="contact.html" class="optional-btn">Pelajari lebih lanjut <span></span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- End Main Banner Area -->
 
@@ -98,9 +62,8 @@
           <div class="icon">
             <i class="fas fa-clipboard-list"></i>
           </div>
-          <h3><a href="#">Transparan</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+          <h3><a href="#" disabled>Transparan</a></h3>
+          <p>Dilakukan secara terbuka sehingga semua proses dapat dilihat.</p>
           <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
@@ -110,9 +73,8 @@
           <div class="icon">
             <i class="fas fa-money-bill-wave"></i>
           </div>
-          <h3><a href="#">Jaminan Uang Kembali</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+          <h3><a href="#" disabled>Jaminan Uang Kembali</a></h3>
+          <p>Jika kondisi barang cacat atau buruk, bisa melakukan refund.</p>
           <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
@@ -122,9 +84,8 @@
           <div class="icon">
             <i class="fas fa-shipping-fast"></i>
           </div>
-          <h3><a href="#">Mudah dalam Bertransaksi</a></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+          <h3><a href="#" disabled>Transaksi Mudah</a></h3>
+          <p>Cukup memesan dari rumah saja, tidak perlu datang ke tempat.</p>
           <!-- <a href="#" class="read-more-btn">Read More</a> -->
         </div>
       </div>
@@ -203,52 +164,64 @@
   <div class="container">
     <div class="section-title">
       <span class="sub-title">What We Provide</span>
-      <h2>Kami Menyediakan Kontruksi Berkualitas</h2>
+      <h2>Kami Menyediakan <span>Konstruksi Berkualitas</span></h2>
       <p>Barang yang kami berikan sudah pasti yang terbaik dan berasal dari Fly Ash dan Bottom Ash.</p>
     </div>
 
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      @foreach($products as $product)
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="services-box">
+            <div class="icon">
+              <img src="{{ public_path('storage/app/public/') . $product->img_url }}" width="100px">
+            </div>
+
+            <h3><a href="#">{{ $product->name }}</a></h3>
+            <p>{{ $product->description }}</p>
+            <a href="#" class="read-more-btn" disabled>Available</a>
+          </div>
+        </div>
+      @endforeach
+      
+      <!-- <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
-            <!-- <i class="flaticon-double-bed"></i> -->
             <img src="/site/img/kedaifaba/beton.png" width="100px">
           </div>
 
           <h3><a href="#">Raw Material Beton FABA</a></h3>
           <p>Selain baja ringan bahan material beton ringan juga mulai banyak diminati, seperti namanya baja ini
             memiliki bobot yang sangat ringan.</p>
-          <a href="#" class="read-more-btn">Available</a>
+          <a href="#" class="read-more-btn" disabled>Available</a>
         </div>
-      </div>
+      </div> -->
 
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
-          <div class="icon">
-            <!-- <i class="flaticon-hotel"></i> -->
+          <div class="icon">s
             <img src="/site/img/kedaifaba/batako.png" width="90px">
           </div>
 
           <h3><a href="#">Batako FABA</a></h3>
           <p>Batako adalah blok yang dibuat dari bahan kiln, biasanya tanah liat atau serpih, tetapi juga mungkin dari
             lumpur berkualitas rendah, dll.</p>
-          <a href="#" class="read-more-btn">Available</a>
+          <a href="#" class="read-more-btn" disabled>Available</a>
         </div>
-      </div>
+      </div> -->
 
-      <div class="col-lg-4 col-md-6 col-sm-6">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
           <div class="icon">
-            <!-- <i class="flaticon-living-room"></i> -->
             <img src="/site/img/kedaifaba/paving.png" width="140px">
           </div>
 
           <h3><a href="#">Paving Block FABA</a></h3>
           <p>Dalam pembuatannya paving block menggunakan susunan bahan sama seperti beton yaitu semen, agregat halus
             (FABA), dan air.</p>
-          <a href="#" class="read-more-btn">Available</a>
+          <a href="#" class="read-more-btn" disabled>Available</a>
         </div>
-      </div>
+      </div> -->
+
       <!--
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="services-box">
@@ -289,12 +262,13 @@
         </div>
       </div> -->
     </div>
+    
   </div>
 </section>
 <!-- End Services Area -->
 
 <!-- Start How We Work Area -->
-<section class="how-we-work-section ptb-100 pt-0">
+<!-- <section class="how-we-work-section ptb-100 pt-0">
   <div class="container">
     <div class="section-title">
       <span class="sub-title">How We Work</span>
@@ -345,7 +319,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End How We Work Area -->
 
 @if(count($testimonials) > 0)
@@ -448,9 +422,9 @@
 <section class="work-with-us-area ptb-100 jarallax" data-jarallax='{"speed": 0.3}'>
   <div class="container">
     <div class="work-with-us-content">
-      <h2>Ingin kerja sama dengan kami?</h2>
+      <h2>Ingin bekerja sama dengan kami?</h2>
 
-      <a href="contact.html" class="default-btn">Kontak kami <span></span></a>
+      <a href="/about" class="default-btn">Kontak kami <span></span></a>
     </div>
   </div>
 </section>
